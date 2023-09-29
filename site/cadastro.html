@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>cadastro</title>
+</head>
+<body>
+  <h1>Cadastro</h1>
+  <div >
+    <h3>Registrar</h3>
+    <div class="areaInput">
+      <p class="texto" for="novologin" id="usuario">Crie um nome de usuário</p>
+      <input type="text" id="novologin">
+      <p for="novasenha" >Crie uma senha</p>
+      <input type="password" id="novasenha">
+      <p for="repsenha">Repita sua senha</p>
+      <input type="password" id="repsenha">
+    </div>
+<button onclick="cadastrar()">Cadastrar</button>
+  </div>
+  <button onclick="voltar()">Login</button>
+
+  <script src="script_cadastro.js"></script>
+</body>
+</html>
+<style>
+  
+p{
+  text-align: left;
+  margin-right: 100px;
+  font-size: 15px;
+  color: white;
+}
+h3{
+  margin: 0;
+}
+.areaInput{
+    background-color: #7a77d900;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 0;
+}
+
+input{
+  width: 100%;
+}
+
+</style>
